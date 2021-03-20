@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Age of Adeline"
-date: 2021-03-20
+date: 2018-06-02
 ---
 Usually, I keep my opinions to myself or at least try to be very subtle when I share them. So why did I, in this summer of 2018, thought to share my opinions on some movies that are already known and famous? Well, some of my friends think that I have a commendable taste in Cinemas (Which I partly agree) and hence I should try my hand on criticizing movies (Which I completely disagree). (Un)Fortunately, I have some time to spare. Plus, I am terribly bored and so, Voilà!
  So now that I have explained why I am doing this, let me clarify what I aim to do. I would try to keep things easygoing and tidy. I absolutely hate "BABU-English" because unless very carefully crafted, this style gnaws away the essence of the texts by camouflaging their inner contents with the unfathomable barrage of words bulwarking the reader from cumulating the quiddity of the text (IRONY INTENDED). I would trace a trail of the plot without disclosing intercate details. In addition to that, I would try to avoid listing out things that could have been done better (Honestly speaking, you don’t need my help here. PNPC-টা আপনি নিজেই manage করে নেবেন। সে ভরসা আমার আছে।). Rather, I would try to justify why this movie is worth your time so that once you are done reading my grammatically erroneous post, watching this movie gets a top position in your priority list. 
