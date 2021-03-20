@@ -1,224 +1,257 @@
-@charset "UTF-8";
-/*********** reset **********/
-html,
-body,
-div {
-  margin:0;
-  padding:0;
-  border:0;
+.container {
+  width: 300px;
+  height: 280px;
+  position: absolute;
+  top: calc(50% - 140px);
+  left: calc(50% - 150px);
 }
-
-/* ------------------------------------------------------ */
-html,
-body {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
-/* -----------------------
-animation circle 回る玉 ~4s
------------------------ */
-.circle {
+.coffee-header {
+  width: 100%;
+  height: 80px;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: #3a6e9a;
+  background-color: #ddcfcc;
+  border-radius: 10px;
 }
-
-.circle div {
+.coffee-header__buttons {
+  width: 25px;
+  height: 25px;
   position: absolute;
-  top: calc((50% - 10px));
-  left: calc((50% - 10px));
+  top: 25px;
+  background-color: #282323;
+  border-radius: 50%;
+}
+.coffee-header__buttons::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  bottom: -8px;
+  left: calc(50% - 4px);
+  background-color: #615e5e;
+}
+.coffee-header__button-one {
+  left: 15px;
+}
+.coffee-header__button-two {
+  left: 50px;
+}
+.coffee-header__display {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+  border-radius: 50%;
+  background-color: #9acfc5;
+  border: 5px solid #43beae;
+  box-sizing: border-box;
+}
+.coffee-header__details {
+  width: 8px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #9b9091;
+  box-shadow: -12px 0 0 #9b9091, -24px 0 0 #9b9091;
+}
+.coffee-medium {
+  width: 90%;
+  height: 160px;
+  position: absolute;
+  top: 80px;
+  left: calc(50% - 45%);
+  background-color: #bcb0af;
+}
+.coffee-medium:before {
+  content: "";
+  width: 90%;
+  height: 100px;
+  background-color: #776f6e;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 45%);
+  border-radius: 20px 20px 0 0;
+}
+.coffe-medium__exit {
+  width: 60px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 30px);
+  background-color: #231f20;
+}
+.coffe-medium__exit::before {
+  content: "";
+  width: 50px;
+  height: 20px;
+  border-radius: 0 0 50% 50%;
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 25px);
+  background-color: #231f20;
+}
+.coffe-medium__exit::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: -30px;
+  left: calc(50% - 5px);
+  background-color: #231f20;
+}
+.coffee-medium__arm {
+  width: 70px;
+  height: 20px;
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  background-color: #231f20;
+}
+.coffee-medium__arm::before {
+  content: "";
+  width: 15px;
+  height: 5px;
+  position: absolute;
+  top: 7px;
+  left: -15px;
+  background-color: #9e9495;
+}
+.coffee-medium__cup {
+  width: 80px;
+  height: 47px;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 40px);
+  background-color: #FFF;
+  border-radius: 0 0 70px 70px / 0 0 110px 110px;
+}
+.coffee-medium__cup::after {
+  content: "";
   width: 20px;
-  height:20px;
-  background: #fff;
+  height: 20px;
+  position: absolute;
+  top: 6px;
+  right: -13px;
+  border: 5px solid #FFF;
   border-radius: 50%;
 }
-
-.circle div:nth-child(1) { animation: anim_01 2s forwards;}
-.circle div:nth-child(2) { animation: move_01 2s 2s; }
-.circle div:nth-child(4) { animation: move_03 2s 2s; }
-.circle div:nth-child(3) { animation: move_02 2s 2s; }
-.circle div:nth-child(5) { animation: move_04 2s 2s; }
-
-@keyframes anim_01 {
-  0% {   transform: scale(0);}
-  20% {  transform: scale(3);}
-  50% {  transform: scale(1);}
-  90% {  transform: scale(5);}
-  100% { transform: scale(0);}
+@keyframes liquid {
+  0% {
+    height: 0px;  
+    opacity: 1;
+  }
+  5% {
+    height: 0px;  
+    opacity: 1;
+  }
+  20% {
+    height: 62px;  
+    opacity: 1;
+  }
+  95% {
+    height: 62px;
+    opacity: 1;
+  }
+  100% {
+    height: 62px;
+    opacity: 0;
+  }
 }
-
-@keyframes move_01 {
-  0% {   transform: translate(0) scale(0);}
-  20% {  transform: translate(-100px, -100px) scale(1);}
-  40% {  transform: translate(-100px, 100px) scale(1);}
-  60% {  transform: translate(100px, 100px) scale(1);}
-  80% {  transform: translate(100px, -100px) scale(1);}
-  100% { transform: translate(0) scale(1);}
-}
-
-@keyframes move_02 {
-  0% {   transform: translate(0) scale(0);}
-  20% {  transform: translate(-100px, 100px) scale(1);}
-  40% {  transform: translate(100px, 100px) scale(1);}
-  60% {  transform: translate(100px, -100px) scale(1);}
-  80% {  transform: translate(-100px, -100px) scale(1);}
-  100% { transform: translate(0) scale(1);}
-}
-
-@keyframes move_03 {
-  0% {   transform: translate(0px) scale(0);}
-  20% {  transform: translate(100px, 100px) scale(1);}
-  40% {  transform: translate(100px, -100px) scale(1);}
-  60% {  transform: translate(-100px, -100px) scale(1);}
-  80% {  transform: translate(-100px, 100px) scale(1);}
-  100% { transform: translate(0) scale(1);}
-}
-
-@keyframes move_04 {
-  0% {   transform: translate(0px) scale(0);}
-  20% {  transform: translate(100px, -100px) scale(1);}
-  40% {  transform: translate(-100px, -100px) scale(1);}
-  60% {  transform: translate(-100px, 100px) scale(1);}
-  80% {  transform: translate(100px, 100px) scale(1);}
-  100% { transform: translate(0) scale(1);}
-}
-
-/* -----------------------
-animation big 広がる玉 4s~5.6s
------------------------ */
-.big {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-}
-.big div{
-  position: absolute;
-  top: calc((50% - 1500px));
-  left: calc((50% - 1500px));
-  width: 3000px;
-  height: 3000px;
-  border-radius: 50%;
-  transform: scale(0);
-}
-
-.big div:nth-child(1) { background: #fffcee; animation: big .5s 4s forwards;}
-.big div:nth-child(2) { background: #bd8e99; animation: big .5s 4.5s forwards;}
-.big div:nth-child(3) { background: #9e3f57;  animation: big .5s 5s forwards;}
-
-@keyframes big {
-  0% {  transform: scale(0);}
-  100% {transform: scale(1);}
-}
-
-/* -----------------------
-animation tri 突き上げる三角 ~5.9s
------------------------ */
-.tri {
-  position: absolute;
-  bottom: -300vw;
-  left: -100vw;
-  width: 0;
-  height: 0;
-  border-left: 150vw solid rgba(255, 0, 0, 0);
-  border-right: 150vw solid rgba(255, 0, 0, 0);
-  border-bottom: 300vw solid  rgb(255, 251, 189);
-  animation: tri .6s 5.3s linear forwards;
-}
-
-@keyframes tri {
-  100% {transform: translateY(-300vw); }
-}
-
-/* -----------------------
-animation squ 現れる四角 7.3s
------------------------ */
-.squ {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-}
-
-.squ div {
-  position: absolute;
-  top: calc((50% - 50px));
-  left: calc((50% - 50px));
-  width: 100px;
-  height:100px;
-  background: #3a6e9a;
-  border-radius: 50%;
-  transform: scale(0);
-}
-
-.squ div:nth-child(1) { animation: squ .6s 5.8s cubic-bezier(0, 0.73, 0.54, 2.4) forwards;}
-.squ div:nth-child(2) { animation: moveSqu_01 .8s 6.5s forwards;}
-.squ div:nth-child(3) { animation: moveSqu_02 .8s 6.5s forwards;}
-.squ div:nth-child(4) { animation: moveSqu_03 .8s 6.5s forwards;}
-
-@keyframes squ {
-  0% {   transform: translateY(100px) scale(0);}
-  20% {  transform: translateY(100px) scale(1);}
-  99% {  transform: translateY(0) scale(1);}
-  100% { transform: translateY(0) scale(0);}
-}
-
-@keyframes moveSqu_01 {
-  0% {   transform: translateX(0);}
-  100% { transform: translateX(-300px); border-radius: 0;}
-}
-
-@keyframes moveSqu_02 {
-  0% {   transform: translateX(0);}
-  100% { transform: translateX(0px); border-radius: 0;}
-}
-
-@keyframes moveSqu_03 {
-  0% {   transform: translateX(0);}
-  100% { transform: translateX(300px); border-radius: 0;}
-}
-
-/* -----------------------
-animation end  
------------------------ */
-.end {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-}
-
-.end div {
-  position: absolute;
-  top: calc((50% - 50px));
-  left: calc((50% - 50px));
-  width: 100px;
-  height:100px;
-  font-size: 70px;
-  color: #fff;
-  line-height: 100px;
-  text-align: center;
+.coffee-medium__liquid {
+  width: 6px;
+  height: 63px;
   opacity: 0;
-  animation: end 1s 7.4s forwards;
+  position: absolute;
+  top: 50px;
+  left: calc(50% - 3px);
+  background-color: #74372b;
+  animation: liquid 4s 4s linear infinite;
 }
-
-.end div:nth-child(1) {
-  transform: translateX(-300px);
+.coffee-medium__smoke {
+  width: 8px;
+  height: 20px;
+  position: absolute;  
+  border-radius: 5px;
+  background-color: #b3aeae;
 }
-
-.end div:nth-child(3) {
-  transform: translateX(300px);
+@keyframes smokeOne {
+  0% {
+    bottom: 20px;
+    opacity: 0;
+  }
+  40% {
+    bottom: 50px;
+    opacity: .5;
+  }
+  80% {
+    bottom: 80px;
+    opacity: .3;
+  }
+  100% {
+    bottom: 80px;
+    opacity: 0;
+  }
 }
-
-@keyframes end {
-  100% { opacity: 1;}
+@keyframes smokeTwo {
+  0% {
+    bottom: 40px;
+    opacity: 0;
+  }
+  40% {
+    bottom: 70px;
+    opacity: .5;
+  }
+  80% {
+    bottom: 80px;
+    opacity: .3;
+  }
+  100% {
+    bottom: 80px;
+    opacity: 0;
+  }
+}
+.coffee-medium__smoke-one {
+  opacity: 0;
+  bottom: 50px;
+  left: 102px;
+  animation: smokeOne 3s 4s linear infinite;
+}
+.coffee-medium__smoke-two {
+  opacity: 0;
+  bottom: 70px;
+  left: 118px;
+  animation: smokeTwo 3s 5s linear infinite;
+}
+.coffee-medium__smoke-three {
+  opacity: 0;
+  bottom: 65px;
+  right: 118px;
+  animation: smokeTwo 3s 6s linear infinite;
+}
+.coffee-medium__smoke-for {
+  opacity: 0;
+  bottom: 50px;
+  right: 102px;
+  animation: smokeOne 3s 5s linear infinite;
+}
+.coffee-footer {
+  width: 95%;
+  height: 15px;
+  position: absolute;
+  bottom: 25px;
+  left: calc(50% - 47.5%);
+  background-color: #41bdad;
+  border-radius: 10px;
+}
+.coffee-footer::after {
+  content: "";
+  width: 106%;
+  height: 26px;
+  position: absolute;
+  bottom: -25px;
+  left: -8px;
+  background-color: #000;
 }
