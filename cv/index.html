@@ -2,135 +2,135 @@
 layout: default
 title: CV
 ---
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vicente Ortiz</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Commissioner"
-    />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2280%22>🚀</text></svg>"
-    />
-    <link rel="stylesheet" href="./styles/reset.scss" />
-    <link rel="stylesheet" href="./styles/style.scss" />
-    <link rel="stylesheet" media="print" href="./styles/print.scss" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
-    <link rel="manifest" href="./favicon/site.webmanifest" />
-  </head>
-  <body>
-    <article class="container">
-      <!-- HEADER -->
-      <section class="header">
-        <div class="title">
-          <h1 class="name">Vicente Ortiz</h1>
-          <h2 class="position" id="position">${{ position }}</h2>
-        </div>
-        <div class="links">
-          <ul>
-            <li class="no-print buttons">
-              <script>
-                document.write(
-                  '<a href="cv_vicente_ortiz_${{ translate.current }}.pdf">PDF</a>'
-                );
-              </script>
-              <script>
-                document.write('<a href="${{ translate.to }}.html">ES/EN</a>');
-              </script>
-            </li>
-            <li>
-              <a href="mailto:vicente.ogc@gmail.com" target="_blank"
-                >vicente.ogc@gmail.com</a
-              >
-            </li>
-            <li>
-              <a href="https://github.com/pouyio" target="_blank">Github</a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/vicenteogc/" target="_blank"
-                >LinkedIn</a
-              >
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <hr />
-
-      <!-- INTRODUCTION -->
-      <section class="intro">
-        <img src="./img/me.jpg" alt="me" />
-        <p class="goals">${{ goals }}</p>
-      </section>
-
-      <hr />
-
-      <!-- BODY -->
-      <section class="main-content">
-        <div class="experiences">
-          <section>
-            <h1 class="title">${{ experiences.title }}</h1>
-            {{#each experiences.list }}
-            <div class="experience">
-              <div>
-                <h1 class="subtitle">${{ title }}</h1>
-                <h2>${{ date }}</h2>
-              </div>
-              <span>${{ text }}</span>
-            </div>
-            {{/each}}
-          </section>
-
-          <section>
-            <h1 class="title">${{ volunteering.title }}</h1>
-            {{#each volunteering.list }}
-            <div class="experience">
-              <div>
-                <h1 class="subtitle">${{ title }}</h1>
-                <h2>${{ date }}</h2>
-              </div>
-              <span>${{ text }}</span>
-            </div>
-            {{/each}}
-          </section>
-        </div>
-
-        <div class="side">
-          <section>
-            <h1 class="title">${{ skills.title }}</h1>
-            <h2 class="subtitle">${{ skills.pro.title }}</h2>
+ <head>
+<link type="text/css" rel="stylesheet" href="css/resume.css"/>
+<title></title>
+</head>
+<body>
+<div id="header">
+<p id="name">Deep Laxman Sukhwani</p>
+         <a href="mailto:deepsukhwani@gmail.com" target="_blank"><p id="email">deepsukhwani@gmail.com</p></a>
+         <p id="contact">+91 75036 10708</p>
+     </div>
+     <div class="left">
+     </div>
+     <div class="right">
+            <h3>CV Highlights</h3>
+            <p>
             <ul>
-              {{#each skills.pro.list }}
-              <li>${{ item }}</li>
-              {{/each}}
-            </ul>
-
-            <h2 class="subtitle">${{ skills.complementary.title }}</h2>
+                <li>Currently going through CS253 – Web Application Engineering and CS61A – Structure & Interpretation of Computer Programs</li>
+                <li>Learnt basic Python, JavaScript, HTML, CSS on Codecademy.com.</li>
+                <li>An independent, dedicated, efficient person. These attributes are proved through the series of courses I have taken or I am taking as of now independently through online platforms.</li>
+                <li>Good Communication Skills, Presentation Skills, attitude towards leadership, authorisation and delegation, conflict resolution and negotiation and a very good team worker.</li></ul>
+            </p>
+            <h3>Professional Experience</h3>
+            <h4 id="company-name">Wingify Software Pvt Ltd</h4>
+            <p id="job-title"><strong>Support Engineer (Technical Support)</strong></p>
+            <p id="job-responsibilities">Job Responsbilities</p>
+            <p>
             <ul>
-              {{#each skills.complementary.list }}
-              <li>${{ item }}</li>
-              {{/each}}
-            </ul>
-          </section>
-          <section>
-            <h1 class="title">${{ languages.title }}</h1>
+                <li>Answer customer queries over email / ticketing system</li>
+                <li>Interact with our engineering team to get software issues and bugs resolved</li>
+                <li>Occasionally interact with customers over Skype or telephone</li>
+                <li>Contribute ideas to the team on how customers can be delighted</li></ul>
+            </p>
+            <h3>Educational Qualifications</h3>
+            <table>
+                <tr id="heading">
+                    <td>Qualification</td>
+                    <td>Board</td>
+                    <td>Percentage / Grades</td>
+                    <td>Year</td>
+                </tr>
+                <tr>
+                    <td>S.S.C</td>
+                    <td>G.S.E.B India</td>
+                    <td>75.57%</td>
+                    <td>2004</td>
+                </tr>
+                <tr>
+                    <td>H.S.C (Science Stream)</td>
+                    <td>G.S.E.B India</td>
+                    <td>72.40%</td>
+                    <td>2006</td>
+                </tr>
+                <tr>
+                    <td>GDCA (Grad. Dipl in Computer Applications)</td>
+                    <td>NIE (National Institute Of Engineering), Mumbai, India</td>
+                    <td>A Grade</td>
+                    <td>2008</td>
+                </tr>
+                <tr>
+                    <td>B.Sc. (Hons) - Applied Accounting</td>
+                    <td>Oxford Brookes University</td>
+                    <td>2:1 – Upper Second Class Honours</td>
+                    <td>2012</td>
+                </tr>
+                <tr>
+                    <td>Chartered Accounting - ACCA</td>
+                    <td>ACCA Glasgow, UK</td>
+                    <td>Passed (1st Attempt)</td>
+                    <td>2013</td>
+                </tr>
+            </table>
+            <h3>Independent Courses</h3>
+            <p>
             <ul>
-              {{#each languages.list }}
-              <li>${{ item }} - <span>${{ level }}</span></li>
-              {{/each}}
+                <li>
+                <span id="course-name">HTML & CSS for Beginners – Web Fundamentals</span> – Codecademy.com</li>
+                <li>
+                <span id="course-name">Python – Fundamentals and Dynamic Programming </span> - Codecademy.com</li>
+                <li>
+                <span id="course-name">JavaScript – Programming Basics, JS Apps and Build Games </span> - Codecademy.com</li>
+                <li>
+                <span id="course-name">CS101: Introduction to Computer Science - Building a Web Crawler</span> - Udacity.com</li>
+                <li>
+                <span id="course-name">CS50x – Introduction to Computer Science I</span> – edX.org & Harvard University</li>
+                <li>
+                <span id="course-name">Calculus One</span> - Ohio State University & Coursera.org</li>
+                <li>
+                <span id="course-name">Introduction to Finance</span> - Coursera.org & University of Michigan</li>
             </ul>
-          </section>
-          <section class="education">
-            <h1 class="title">${{ education.title }}</h1>
-            <h2>${{ education.degree }}</h2>
-            <h3>${{ education.location }} - ${{ education.date }}</h3>
-          </section>
-        </div>
-      </section>
-    </article>
-  </body>
+            <h3>Technical Skills</h3>
+            <p>
+            <ul>
+                <li>
+                <span id="course-name">Operating Systems:</span> DOS, Windows 98, Windows 2000, Windows XP, Windows NT, Windows Server 2003, Windows Vista, Windows 7, Macintosh Computers (OS X), Linux (Ubuntu, Fedora)</li>
+                <li>
+                <span id="course-name">Application Software:</span> Office 97-2003; Office XP, Office 2007, Office for Mac 2011, iWork ’09, Sage Accounting Software, Sage 50 (Accounting Software), Excel 2003/2007 for Financial Modelling spreadsheets.</li>
+                <li>
+                <span id="course-name">Programming Skills:</span>HTML, CSS, Python, JavaScript, learning C and C++</li></ul>
+            </p>
+            <h3>Certifications / Awards:</h3>
+            <p>
+            <ul>
+                <li>Scored highest in ACCA P1 – Governance, Risk & Ethics exam – June 2012 session amongst full time international students at Kaplan Financial, London.</li>
+                <li>Interviewed by ACCA for “international ACCA student in UK”, interview published in January 2012 edition of ACCA Student Accountant Magazine.</li>
+                <li>Interviewed by ACCA for “international ACCA student in UK”, interview published in January 2012 edition of ACCA Student Accountant Magazine.</li></ul>
+            </p>
+            <h3>Personal Information:</h3>
+            <p>
+            <ul>
+                <li>
+                A young, determined hard and smart working person. I believe in task based roles and complete ownership of work.
+                <li>
+                <span id="course-name">Languages Known:</span>English, Hindi, Gujarati and Sindhi</li>
+                <li>
+                <span id="course-name">Hobbies:</span>I love reading Finance and IT related books / magazines, playing Chess, swimming, listening music, surfing Internet, self-learning through e-courses.</li> </ul>
+            </p>
+            <h3>Other Information</h3>
+            <p>
+            <ul>
+                <li>
+                <span id="course-name">Expected Salary:</span>As per company standards</li>
+                <li>
+                <span id="course-name">Area of Interest:</span>Software Development, Programming, Start-ups, Coding, App Development, Technical Support, Support Engineer, Customer Happiness, Client service, Investment Banking, Corporate Finance, Hedge Funds, Mergers & Acquisitions, Analyst, Equity Research, Business Analysis</li>
+                <li>
+                <span id="course-name">Joining Date:</span>Immediate</li></ul>
+            </p>
+            <h3>Declaration</h3>
+            <p>
+            I hereby declare that the details furnished above are true and correct to the best of my knowledge and belief.</p>
+     </div>
+     <div id="footer"></div>
+    </body>
