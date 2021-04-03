@@ -51,7 +51,8 @@ ul.posts li {
 
 .block-reveal {
   --t: calc(var(--td) + var(--d));
-
+  
+  text-align: center; 
   color: transparent;
   padding: 4px;
 
