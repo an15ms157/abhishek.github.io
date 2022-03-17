@@ -1,0 +1,1 @@
+If you are rebinning histograms, copy the same histogram and then rebin it. Don't directly rebin it as this changes the  initial value of the pointer
